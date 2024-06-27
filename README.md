@@ -13,4 +13,6 @@
   - `hdfs dfs -mkdir -p <data_dir>`
   - `hdfs dfs -copyFromLocal <data_file> <data_dir>/<data_file>`
 * Run the jar using
-  - `hadoop jar <app>.jar <main_class> <data_dir>/<data_file> <output_dir>`
+  - `hadoop jar <app>.jar <main_class> <data_dir>/<data_file> <output_dir>` or
+  - `hadoop jar <app>.jar <main_class> hdfs:///user/hadoop/<data_dir>/<data_file> hdfs:///user/hadoop/<output_dir>` or
+  - `hadoop jar <app>.jar <main_class> hdfs://namenode:8020/user/hadoop/<data_dir>/<data_file> hdfs://namenode:8020/user/hadoop/<output_dir>`
